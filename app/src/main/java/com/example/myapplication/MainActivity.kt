@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, todos)
         listView.adapter = adapter
 
+
         listView.setOnItemClickListener{adapterView, view, i, l ->
             val text = listView.getItemAtPosition(i).toString()
             adapter.remove(text)
